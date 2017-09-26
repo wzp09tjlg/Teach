@@ -24,7 +24,22 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
+    //jar包的引用
+    compile juniversalchardet
+    // Network Framework
+    compile retrofit
+    compile converter_gson
+    compile retrofit2_rxjava2_adapter
+    compile okhttp_logging_interceptor
+    compile okhttp
+    // Reactive Programming Codeing Framework
+    compile rxandroid
+    compile rxjava
+    //三方库
+    //支持库
+    compile rootProject.ext.support_dependencies["v7"]
+    compile rootProject.ext.support_dependencies["v4"]
+    compile rootProject.ext.support_dependencies["recyclerView"]
+    //测试的库
+    testCompile junit
 }
