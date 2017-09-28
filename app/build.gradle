@@ -40,6 +40,8 @@ dependencies {
     compile rxandroid
     compile rxjava
     //三方库
+    //图片库
+    compile glide
     //支持库
     compile rootProject.ext.support_dependencies["v7"]
     compile rootProject.ext.support_dependencies["v4"]

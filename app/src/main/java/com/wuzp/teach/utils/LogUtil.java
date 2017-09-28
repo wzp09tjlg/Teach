@@ -9,7 +9,6 @@ import android.util.Log;
 public class LogUtil {
 
     private LogUtil() {
-        /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
     }
     private static final String TAG = "****.read";

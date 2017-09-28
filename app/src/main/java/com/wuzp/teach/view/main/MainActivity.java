@@ -11,6 +11,8 @@ import com.wuzp.teach.base.BaseFragment;
 import com.wuzp.teach.base.TechActivity;
 import com.wuzp.teach.databinding.ActivityMainBinding;
 import com.wuzp.teach.view.main.fragment.BBaseFragment;
+import com.wuzp.teach.view.main.fragment.InfoFragment;
+import com.wuzp.teach.view.main.fragment.NewsFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,8 +35,8 @@ public class MainActivity extends TechActivity<ActivityMainBinding,MainPresenter
     @Override
     protected void initView() {
         super.initView();
-        BaseFragment info = new BBaseFragment();
-        BaseFragment news = new BBaseFragment();
+        BaseFragment info = new InfoFragment();
+        BaseFragment news = new NewsFragment();
         BaseFragment fun  = new BBaseFragment();
         BaseFragment read = new BBaseFragment();
         BaseFragment user = new BBaseFragment();

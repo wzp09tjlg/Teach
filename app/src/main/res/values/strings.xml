@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">Teach</string>
+    <string name="app_name">积木盒子</string>
+
+    <!-- 通用字符 -->
+    <string name="common_loading">正在加载...</string>
+    <string name="common_waiting">请稍后...</string>
+
+    <string name="network_connect_error">网络未连接...</string>
+    <string name="unkonw_error">未知错误</string>
+
+    <string name="data_empty">数据为空呢...</string>
+    <string name="data_error">数据错误</string>
+
+    <string name="refresh_try">（点击重试）</string>
+
+    <!-- 其他模块字符 -->
+    <!-- 资讯 -->
+    <string name="info">资讯</string>
+    <!-- 新闻 -->
+    <string name="news">新闻</string>
+    <string name="news_ares">地区</string>
+    <string name="news_dynamic">动态</string>
+    <!-- 娱乐 -->
+    <string name="fun">娱乐</string>
+    <string name="fun_joke">笑话</string>
+    <string name="fun_funny_pic">趣图</string>
+    <!-- 读书 -->
+    <string name="read">读书</string>
+    <!-- 读书 -->
+    <string name="user">我的</string>
 </resources>

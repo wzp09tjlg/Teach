@@ -16,13 +16,15 @@
         <!--*****************************************************-->
         <!--                       Activity                      -->
         <!--*****************************************************-->
-        <activity android:name=".view.main.MainActivity">
+        <activity android:name=".view.main.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".view.webDetail.WebDetailActivity"
+            android:screenOrientation="portrait"/>
 
         <!--*****************************************************-->
         <!--                       Service                       -->
@@ -31,6 +33,15 @@
         <!--*****************************************************-->
         <!--                       Receiver                      -->
         <!--*****************************************************-->
+        <receiver android:name=".receiver.NetworkStateReceiver"
+            android:exported="false">
+            <intent-filter>
+                <!-- 这是联网跟断网的广播 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!-- 这是亮屏和关屏的广播 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
 
         <!--*****************************************************-->
         <!--                     ContentProvider                 -->
