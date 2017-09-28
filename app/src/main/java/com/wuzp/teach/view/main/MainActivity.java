@@ -10,9 +10,11 @@ import com.wuzp.teach.adapter.MainPageAdapter;
 import com.wuzp.teach.base.BaseFragment;
 import com.wuzp.teach.base.TechActivity;
 import com.wuzp.teach.databinding.ActivityMainBinding;
-import com.wuzp.teach.view.main.fragment.BBaseFragment;
+import com.wuzp.teach.view.main.fragment.FunFragment;
 import com.wuzp.teach.view.main.fragment.InfoFragment;
 import com.wuzp.teach.view.main.fragment.NewsFragment;
+import com.wuzp.teach.view.main.fragment.ReadFragment;
+import com.wuzp.teach.view.main.fragment.UserFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,9 +39,9 @@ public class MainActivity extends TechActivity<ActivityMainBinding,MainPresenter
         super.initView();
         BaseFragment info = new InfoFragment();
         BaseFragment news = new NewsFragment();
-        BaseFragment fun  = new BBaseFragment();
-        BaseFragment read = new BBaseFragment();
-        BaseFragment user = new BBaseFragment();
+        BaseFragment fun  = new FunFragment();
+        BaseFragment read = new ReadFragment();
+        BaseFragment user = new UserFragment();
         fragments.add(info);
         fragments.add(news);
         fragments.add(fun);

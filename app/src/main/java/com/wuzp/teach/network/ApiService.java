@@ -1,6 +1,7 @@
 package com.wuzp.teach.network;
 
 import com.wuzp.teach.network.entity.base.HttpBase;
+import com.wuzp.teach.network.entity.entertaiment.EntertainmentBean;
 import com.wuzp.teach.network.entity.info.InfosBean;
 import com.wuzp.teach.network.entity.news.NewsChannelsBean;
 
@@ -20,12 +21,18 @@ public interface ApiService {
     @GET(ApiFinal.URL_HOME_INFO)
     Flowable<HttpBase<InfosBean>> getHomeInfo();
 
-    //地域新闻
+    //新闻
     @GET(ApiFinal.URL_HOME_NEW_CHANNEL)
     Flowable<HttpBase<NewsChannelsBean>> getHomeNewsChannel();
 
-    //新闻
     //娱乐
+    //获取笑话
+    @GET(ApiFinal.URL_HOME_JOKE_TEXT)
+    Flowable<HttpBase<EntertainmentBean>> getHomeJokeText();
+    //获取趣图
+    @GET(ApiFinal.URL_HOME_FUNNY_PIC)
+    Flowable<HttpBase<EntertainmentBean>> getHomeFunnyPic();
+
     //读书
     //我的
 }
