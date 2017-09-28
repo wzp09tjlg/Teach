@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.wuzp.teach.database.service.DBService;
+import com.wuzp.teach.utils.LogReportManager;
 import com.wuzp.teach.utils.PreferenceUtil;
 
 /**
@@ -25,6 +26,7 @@ public class BaseApp extends Application {
         PreferenceUtil.init(gContext); //初始化Sp
         DBService.init(gContext);//初始化数据库
 
+        LogReportManager.init(gContext);
     }
 }
 
